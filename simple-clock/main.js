@@ -22,6 +22,6 @@ setInterval(() => {
 }, 60_000);
 
 setInterval(() => {
-    h_degrees += 6; 
+    h_degrees += 0.5; 
     hour.style.transform = `translateY(-50%) rotate(${h_degrees}deg)`; // Apply the rotation
 }, 60_000);
