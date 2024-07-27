@@ -1,0 +1,129 @@
+.clock{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(83, 78, 78);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.center{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.stick{
+    position: absolute;
+    transform-origin: bottom center;
+}
+.hour-stick{
+    width: 5px;
+    height: 80px;
+    background-color: black;
+    transform: translateY(-50%) rotate(-60deg);
+
+}
+.hour-stick::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: transparent transparent black transparent;
+    border-width: 3px;
+    border-style: solid;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    /* transition: ; */
+}
+.min-stick{
+    width: 3px;
+    height: 160px;
+    background-color: rgb(37, 37, 37);
+    /* transform: translateY(-50%) rotate(60deg); */
+    transition: 0.2s;
+
+}
+.sec-stick{
+    width: 1px;
+    height: 150px;
+    background-color: red;
+    transform: translateY(-50%) rotate(-90deg);
+    transition: 0.2s;
+
+}
+.cover{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+}
+
+
+.digits{
+    position: absolute;
+}
+.h12{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 16px;
+}
+.h1{
+    top: 10%;
+    right: 109px;
+}
+.h2{
+    top: 25.5%;
+    right: 44px;
+}
+.h3{
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.h4{
+    bottom: 25.5%;
+    right: 44px;
+}
+.h5{
+    bottom: 10%;
+    right: 109px;
+}
+.h6{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px;
+}
+.h7{
+    bottom: 9.5%;
+    left: 107px;
+}
+.h8{
+    bottom: 25.8%;
+    left: 44px;
+}
+.h9{
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.h10{
+    top: 25.8%;
+    left: 42px;
+}
+.h11{
+    top: 10%;
+    left: 105px;
+}
+
